@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate_user
 
-private
+  private
 
   def authenticate_user
     client_id = ENV['FOURSQUARE_CLIENT_ID']
